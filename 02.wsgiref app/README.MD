@@ -6,6 +6,10 @@ Kode ini adalah contoh dasar WSGI (Web Server Gateway Interface) - standar komun
 </p>
 
 
+## OUTPU ON BROWSER 
+<img src="http port 5000.png">
+
+
 
 ## Code
 
