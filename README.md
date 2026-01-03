@@ -54,6 +54,10 @@ included to support functionality.
 
 5. Open your browser at http://127.0.0.1:5000
 
+## To Run 
+Open ur Terminal And use cd to ur python directory 
+and Type "py python_file.py"
+
 ## Notes about UI / Theme
 - This project is backend-first. The HTML and CSS are minimal and intended
   only to support using and testing the application.
