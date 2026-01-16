@@ -58,6 +58,9 @@ index_page = """
 
 """
 
+# logic menggunakan environ dan QUERY_STRING lalau membuat variabel bernama tes lalu memanggil parse_qs(environ['QUERY_STRING'])
+# dan membuat variabel namadepan dan namabelakang untuk menampung data dari form dengan [''])[0] berfungsi untuk tidak membuat output list 
+# dan memnampung index_page % (namadepan,namabelakang) sebagai variabel body untuk dikirim ke hasil di index_page 
 def application(environ,start_response):
     if (environ['QUERY_STRING']):
         tes = parse_qs(environ['QUERY_STRING'])
@@ -79,6 +82,7 @@ def application(environ,start_response):
     start_response(status,headers)
     return [body.encode('utf-8')]
 
+# menjalankan server di localhost port 5000
 if __name__=="__main__":
     server = make_server('localhost',5000,application)
     server.serve_forever()
