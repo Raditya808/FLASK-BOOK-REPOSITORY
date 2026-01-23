@@ -1,6 +1,6 @@
-# File To File Flask Python 
+# File Render Template Flask
 
-<p>Pemanggilan File ke File dalam khasus OOP dalam Python Flask</p>
+<p>Pemanggilan File menggunakan render_template</p>
 
 
 
