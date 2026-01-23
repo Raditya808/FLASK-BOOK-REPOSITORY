@@ -91,7 +91,8 @@ def index3(angka):
     return f"<h1>Page %s</h1>" %angka
 
 
-
+# application adalah nama parameter app package __name__ yang akan di panggil 
+# dan file berjalan di http://localhost:5000 
 if __name__=="__main__":
- 
+    application.run(debug=True) 
 ```
