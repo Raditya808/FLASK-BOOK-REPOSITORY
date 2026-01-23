@@ -55,9 +55,9 @@ questions, and making PRs.
 # WSGI GET 
 
 
-<p>WSGI GET adalah metode cara metode get bekerja dalam syntax flask bukan post melainkan get</p>
+<p>ROUTING LOCALHOST</p>
 
-<p>Cara Kerja WSGI didalam form get html</p>
+<p>Cara Kerja slash / di rute web FLASK</p>
 
 
 
