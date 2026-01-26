@@ -17,10 +17,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    # membuat var baru dan memanggil class lingkaran() di clastes.py
     hasil = lingkaran()
     
     #  set nilai dari function self set_radius dari clastes
-    hasil.set_radius(5.0) 
+    hasil.set_radius(5.0)
+    # di kirim ke index.html dan hasil.setradius(5.0) nya yang di timpa
+    # dari class hasil = class lingkaran di classtes.py
     return render_template('index.html',hasil=hasil)
 
 
