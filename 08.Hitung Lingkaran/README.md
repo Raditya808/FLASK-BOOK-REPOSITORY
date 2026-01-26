@@ -23,7 +23,7 @@ def index():
     #  set nilai dari function self set_radius dari clastes
     hasil.set_radius(5.0)
     # di kirim ke index.html dan hasil.setradius(5.0) nya yang di timpa
-    # dari class hasil = class lingkaran di classtes.py
+    # dengan mengirim hasil dari set_radius diatas ke file html
     return render_template('index.html',hasil=hasil)
 
 
