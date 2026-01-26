@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hasil</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Hitung Lingkaran</h1>
+  <!-- memanggil hasil yang di run.py lalu memanggil objek get_radius jadi 5.0 karena di run.py set_radius = 5.0 dan objek get_radius di dapatkan 5.0 di return -->
+  <p>Jari jari = {{hasil.get_radius()}}</p>
+  <!-- hasil tadi akan di panggil hitungkeliling() di objek return hitung keliling maka nilai 5.0 tadi akan di hitung menggunakan rumus pi -->
+  <p> keliling = {{hasil.hitungkeliling()}}</p>
+  <!-- hasil tadi akan dipanggil luas di objek hitungluas di return maka keliling 5.0 akan di hitung menggunakan rumus 2*pi*self_radius maka itu hasilnya -->
+  <p>luas {{hasil.hitungluas()}}</p>
+</body>
+
+</html>
