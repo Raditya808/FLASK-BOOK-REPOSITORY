@@ -26,7 +26,7 @@ def index():
         # models.setUsername adalah objek function yang ada di classtes.py
         models.setPassword(password)
 
-        # models dari variabel diatas authenticate adalah dari class function bernama authenticate
+        # models dari variabel diatas authenticate adalah dari class function bernama authenticate di file classted.py
         # kondisi if jika user dan password sesuai maka masuk di login_success.html
         if models.authenticate():
             return render_template('login_success.html',models=models)
