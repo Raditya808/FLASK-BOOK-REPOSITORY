@@ -64,6 +64,8 @@ class User(object):
         return self.username
 
 
+    # kondisi jika true dimana function authenticate dan memanggil self.username di set demo dan self.password adalah flask maka user bisa masuk
+    # jika false maka akan diarahkan ke web lain / 
     def authenticate(self):
         if self.username == "demo" and  self.password == 'flask':
             return True 
