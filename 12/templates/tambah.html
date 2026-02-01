@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Tambah data</h1>
+  <form method="POST">
+    <input type="number" name="kode" placeholder="masukan angka sesuai urutan"><br>
+    <input type="text" name="nama" placeholder="masukan nama"><br>
+    <input type="number" name="harga" placeholder="masukan harga"><br>
+    <input type="submit" value="kirim">
+  </form>
+  <a href="{{url_for('index')}}">Kembali</a>
+</body>
+
+</html>

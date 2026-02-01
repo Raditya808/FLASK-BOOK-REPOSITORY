@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DATA CRUD</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h2>Crud sqlite3 from terminal</h2>
+  <table border="1px">
+    <tr>
+      <th>Kode</th>
+      <th>Nama</th>
+      <th>Harga</th>
+      <th>Ubah</th>
+    </tr>
+    
+  
+  
+    <!-- membuat loop python bernama test dan memanggil container yang ada did app.py-->
+    {% for test in container%}
+    <tr>
+      <td>{{test.kode}}</td>
+      <td>{{test.nama}}</td>
+      <td>{{test.harga}}</td>
+      <td><a href="{{url_for('ubah', id=test.kode)}}">Ubah</a></td>
+
+    </tr>
+    {%endfor%}
+    
+      <tr> 
+        <td><a href="{{url_for('tambah')}}">Tambah data</td>
+       <td></td> 
+       <td></td>
+      <td></td>
+      </tr>
+  </table>
+</body>
+
+</html>
