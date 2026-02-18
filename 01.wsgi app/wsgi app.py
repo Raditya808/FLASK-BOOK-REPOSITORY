@@ -5,7 +5,7 @@ def application(environ,start_response):
                 <head>
                 <title>demo wsgi</title>
                 </head>
-                
+                <h1>Halo dunia dari wsgi</h1>
                 </html>'''
     status = '200 OK'
     headers = [
