@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rsult</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <h1></h1>
+  <table border="1px">
+    <tr>
+    <th>Nama</th>
+    <th>Umur</th>
+    <th>Hapus Nama</th>
+    <th>Hapus Umur</th>
+    </tr>
+    <tr>
+      <!-- make session syntax-->
+      <!-- dan memanggil parameter didalam session[] sebelum request.form[] -->
+      <td>{{session['nm']}}</td>
+      <td>{{session['umr']}}</td>
+
+      <!-- url for dari function hapusdatanama dan hapusdataumur dari kode main.py yang dikirim lewat render template dan mennggunakan pop,None untuk hapus data-->
+      <td><a href="{{url_for('hapusdatanama')}}">Hapus Nama</a><br></td>
+    <td><a href="{{url_for('hapusdataumur')}}">Hapus Umur</a><br></td>
+    </tr>
+
+  </table>
+
+  <button>
+  <a href="{{url_for('index')}}">Input Lagi</a>
+  </button>
+  </body>
+</html>
