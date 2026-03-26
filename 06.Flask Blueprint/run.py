@@ -27,3 +27,7 @@ def run_index():
 
 if __name__=="__main__":
     app.run(debug=True)
+    
+# ketika membuat syntax bluprint dalam file ini dalam kondisi post atau get 
+# maka di url_for harus memanggil si blueprint nya dulu baru function nya
+# berlaku di semua rute dalam file ini yang menggunakan Blueprint
