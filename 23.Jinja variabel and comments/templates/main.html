@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jinja comments / variabel</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <h1>jinja comments / variabel</h1> 
+  <!-- membuat commentar dalam jinja-->
+  {# ini adalah komentar#}
+    
+  {#variabel a didalam main.py#}
+  <p>variabel a = {{a}}</p>
+  {#jinja if statement variabel a dalam main.py#}
+  {%if a == 10 %}
+  <p>a = {{a}} True</p>
+  {%endif%}
+
+
+
+  </body>
+</html>
