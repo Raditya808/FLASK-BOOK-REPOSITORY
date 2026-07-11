@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+      <h1>Jinja if elif else endif statement</h1>
+
+
+      <!-- 
+      make condition if and elif and else just like python lenguage 
+      this time using endif to end the condition
+      -->
+      {%if a == 1%}
+      <p>This num = 1</p>
+      {%elif a == 2%}
+      <p>This num = 2</p>
+       {%elif a == 3%}
+      <p>This num = 3</p>
+       {%elif a == 4%}
+      <p>This num = 4</p>
+       {%elif a == 5%}
+      <p>This num = 5</p>
+       {%elif a == 6%}
+      <p>This num = Good boy nigga</p>
+
+      {%else%}
+      <p>Choose the num</p>
+
+
+
+      {%endif%}
+      <a href="{{url_for('navigation_jinja')}}">Back</a>
+  </body>
+</html>
