@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+        <h1>jinja set variabel and navigation</h1>  
+
+        <!-- membuat variabel menggunakan set -->
+        <!-- kedua navigasi dibawah ini akan diarahkan ke salah satu fungsi di file main.py-->
+        {%set navigasi%}
+        <br>
+        <a href="{{url_for('sec_route')}}">scond</a>
+        <br>
+        <a href="{{url_for('thrd_route')}}">third</a>
+        
+
+
+        <!-- endset kondisi dimana jika ingin selesai membuat set-->
+        {%endset%}
+        
+
+        <!-- mengambil variabel menggunakan kurawal -->
+        <!-- mengambil isi dari set navigasi -->
+        <h3>{{navigasi}}</h3>
+
+
+        <!-- variabel set isi value--> 
+        {%set a = 10%}
+
+        <!--a = 10 -->
+        <p>{{a}}</p>
+        
+  </body>
+</html>
