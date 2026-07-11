@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--
+mengirim dict_nav dan menggunakan syntax items dan menerima dua parameter key dan value dimana key adalah dictionary key dan value adalah value key nya
+    -->
+    <p>menggunakan for dua param dan items</p>
+    {%for key,value in dict_nav.items()%}
+    <a href="{{key}}">{{value}}</a>
+    {%endfor%}
+
+    <!-- menggunakan for loop-->
+    <p></p>
+  </body>
+</html>
